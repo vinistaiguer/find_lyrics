@@ -16,32 +16,36 @@
 </head>
 <body>
     <header class="container-header">
+
         <h1 class="title">Lyrics</h1>
     </header>
     <main>
-        <form class="form-horizontal">
+        <form id="lyrics_form" class="form-horizontal">
             <fildset class="form-group">
                 <div class="form">
                     <legend class="form-legend">Banda | Músico</legend>
                         <p>
-                            <input class="size_1" type="text" name="size" id="artist" placeholder="Digite a banda" />
                             <label for="size_1"></label>
+                            <input class="size_1" type="text" name="size" id="artist" placeholder="Digite a banda" />
+                            
                         </p> 
                 </div>
                 <div class="form form-2">
                     <legend class="form-legend">Música</legend>
                         <p>
-                            <input class="size_1" type="text" name="size" id="song" placeholder="Digite a música" />
                             <label for="size_1"></label>
+                            <input class="size_1" type="text" name="size" id="song" placeholder="Digite a música" />
+                            
                         </p> 
                 </div>
 
-                <button class="btn-form" type="submit">Pesquise</button>
+                <button class="btn-form" type="submit">find lyrics</button>
             </fildset>
         </form>
-        <div class="container-lyrics">
+        <div id="container-lyrics" class="container-lyrics">
             <pre id="lyrics"></pre>
         </div>
+
 
     </main>
 
@@ -49,5 +53,6 @@
         <p>Vinícius Staiguer &copy</p>
     </footer>
     
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
